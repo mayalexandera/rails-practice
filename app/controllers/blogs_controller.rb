@@ -63,6 +63,7 @@ class BlogsController < ApplicationController
 
   def toggle_status
     @blog.published! if @blog.draft?
+    
     @blog.draft!
     redirect_to blogs_url, notice: "Blog status has been updated"
   end
