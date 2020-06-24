@@ -26,4 +26,4 @@ puts "10 blog posts created"
       thumb_image: "http://placehold.it/350x200" 
     )
   end
-end'
+end
