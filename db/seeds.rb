@@ -42,3 +42,9 @@ puts "10 blog posts created"
       thumb_image: "http://placehold.it/350x200" 
     )
   end
+
+  3.times do |technology|
+    Portfolio.last.technologies.create!(
+      name: "tech #{technology}"
+    )
+  end
