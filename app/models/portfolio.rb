@@ -5,6 +5,7 @@ class Portfolio < ApplicationRecord
   include Placeholder
   validates_presence_of :title, :main_image, :thumb_image
 
+
   after_initialize :set_defaults
 
   def self.angular  
