@@ -19,4 +19,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class:"source-greeting")
    end 
   end
+
+  def copyright_generator
+    MayalexanderaViewTool::Renderer.copyright "Maya Alexandera", "All rights reserved"
+  end
 end
