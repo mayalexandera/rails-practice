@@ -9,3 +9,4 @@ class Blog < ApplicationRecord
 
 
 end
+ 

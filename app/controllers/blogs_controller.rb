@@ -1,11 +1,10 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
-
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
   # GET /blogs
   # GET /blogs.json
   def index
-    binding.pry
     @blogs = Blog.all
     @page_title = "Blog"
   end
